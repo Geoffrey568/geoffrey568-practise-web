@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+  margin-right: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: grid;
+}
+/* Header Styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Main content Styling */
+main {
+  padding: 20px;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.destination-list {
+  display: grid;
+  gap: 20px;
+  /*flex-wrap: wrap;
+  
+  grid-template-columns: repeat(autofit,max-width(800px,1fr)); */
+}
+
+@media (max-width: 500px) {
+  .destination-list {
+    grid-template-columns:  1fr ;
+  }
+}
+
+@media (min-width: 760px) {
+  .destination-list {
+    grid-template-columns:  1fr 1fr;
+  }
+}
+.destination-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.image{
+  height: 400px;
+  width: 749px;
+}
+.destination-item h3 {
+ padding: 20px;
+ background-color: #f4f4f4;
+ font-size: 30px;
+ color: black;
+}
+.destination-item p {
+  padding: 10px 10px 10px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.destination-item :hover {
+  transform: scale(1.05);
+}
+/* Booking Form Styling */
+#booking-form {
+  display: flex;
+  flex-direction: column ;
+  gap: 15px;
+}
+#booking-form label {
+  font-weight: bold;
+}
+#booking-form select,
+#booking-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#booking-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+.booking-alert {
+  background-color: red;
+  color: white;
+}

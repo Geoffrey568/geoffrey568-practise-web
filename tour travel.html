@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanian Airways</title>
+  <link rel="stylesheet"
+  href="style-tour.css">
+</head>
+<body>
+  <!--Header Section-->
+  <header>
+    <div>
+     <img class="logo" src="images/dhanian logo.jpg">
+     <h1>Dhanian Airways</h1> 
+    </div>
+    <nav>
+      <ul>
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#destinations">Destinations </a></li>
+        <li> <a href="#about">About Us</a></li>
+        <li> <a href="#contact">Contact</a></li>
+        <li> <a href="/bookings.html"> Bookings</a></li>
+      </ul>
+    </nav>
+  </header>  
+  <!--Main Content Section-->
+  <main id="home">
+    <section id="destinations">
+      <h2>Popular Destinations</h2>
+      <div class="destination-list">
+      
+        <div class="destination-item">
+          <img class="image" src="images/california.jpg" alt="california">
+          <h3>California</h3>
+           <p>Explore the Golden State with Dhanian Airways.</p>
+        </div>
+        <div class="destination-item">
+          <img class="image" src="images/nairobi.jpg" alt="Nairobi">
+          <h3>Nairobi</h3>
+           <p>Discover the beauty of kenya's capital.</p>
+        </div>
+        <div class="destination-item">
+          <img class="image" src="images/sychelles-1.jpg" alt="Seychelles">
+          <h3>Seychelles</h3>
+           <p>Experience the pristine beaches os Seychelles.</p>
+        </div>
+        <div class="destination-item">
+          <img class="image" src="images/kisumu.jpg" alt="Kisumu">
+          <h3>Kisumu</h3>
+           <p>Enjoy the Tranquility of Lake Vitoria.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+       <p>Dhanian Airways is dedicated to provide the best travel experience. We offer flights to top destinations around the world, ensuring comfort and safety for our passengers.</p>
+    </section>
+
+    <section id="booking">
+      <h2>Book your Flight</h2>
+      <form id="booking-form">
+        <label for="destination"> Choose Destinaton:</label>
+        <select class="destination" name="destination" id="destination">
+          <option value="california">California</option>
+          <option value="nairobi">Nairobi</option>
+          <option value="seychelles">Seychelles</option>
+          <option value="kisumu">Kisumu</option>
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="passengers">Number of passengers:</label>
+        <input type="number" id="passengers" name="passengers" min="1" max="10">
+        <button class="book-now-button " type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+  <!--Footer Section-->
+  <footer>
+    <p>&copy; 2024 Dhanian Airways. All Rights Reserved</p>
+  </footer>
+  <script src="script-tour.js"></script>
+</body>
+</html>
